@@ -3,7 +3,7 @@ const { init, isMaster } = require('./src/cluster/cluster');
 
 const initFib = require("./src/fibFun");
 
-if (isMaster) {
+if (false) { // to disable cluster else replace with `isMaster`.
     init();
 } else {
     const app = express();
